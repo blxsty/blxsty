@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+h4{
+    font-size: 20px;
+    color:floralwhite;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: lavenderblush;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: aliceblue;
+}
+p{
+    font-size: 16px;
+    color: azure;
+}
+
+#header{
+    padding: 20px 80px;/* <- Distancia dos cabeçalho para sua margn*/
+    display: flex;/*Disposição dos itens vai ser flexivel(adapitando-se a quantidade de elemento que tiver)*/
+    align-items: center;/* <- Alinhamento dos itens do centro */
+    justify-content: space-between;/* <- Espaçamento entre os conteudos */
+    background: white;/* <- Cor do fundo do cabeçalho */
+    box-shadow: 0px 15px; rgba(0, 0, 0, 0,05); /* <- Sombra da caixa do cabeçalho */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.Logo{
+    width: 50px;/* largura */
+    height: 50px;/* Altura */
+}
+
+#hero{
+    background-image: url("../img/50x50.png");/* Link da imagem exibida dentro da section */
+    background-color: black; /*cor do fundo*/
+    height: 50px;
+    /*width: 100% <- largura da section*/
+    background-size: cover;
+    background-position: top 25% right 0;/* posição da imegem da section */
+    padding: 0 80px;/*Distancia entre o alinhamento e a sua borda */
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+}
+#hero{
+    color: white;
+}
+#hero button{
+    background-image: url("");
+    background-color: transparent;
+    color: white;
+    border: 0;
+    padding: 14px 86px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    z-index: 2;
+}
+
+#navbar{
+    padding: 20px 80px; /* Preenchimento do centro e fora do menu */
+    display: flex;/* Disposição do menu horizontal */
+    align-items: center;
+}
+#navbar li{
+    padding: 0 20px; /* Distancia entre os intens de menu */
+    list-style: none; /*Remove os bullets(*) */
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none; /* remove as letras sublinhadas dos links */
+    font-size: 16px; /* <- Tamanho da fonte do link dentro do menu */
+    font-weight: 600; /* <- Peso da fonte do link dentro do iten de menu */
+    color: #1a1a1a;
+    transition: 0,3 ease;
+}
+
+#navbar li a.active::after, /* < Adiciona um sublinhado no item do menu correpondente no que voce esta */
+#navbar li a.active::after{ /* < Adiciona um sublinhado no item do menu quando voce passa o mause sobre eles */
+    content: "";  /* Conteudo do sublinhado */
+    width: 50px;  /* Largura do sublinhado */
+    height: 2px;  /* <- Peso do sublinhado, quando maior o valor a altura o sublinhado ficara */
+    background: #070301; /* <- cor so sublinhado */
+    position: absolute;
+    bottom: -4px; /* posição a baixo do item sublinhado*/
+    left: 20px; /* posição esuquerda que o sublinhado ficara do iten*/
+     
+}
+
+/* <-Inicio Fature */
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+
+.section-n1{
+    margin: 40px 0;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 34px rgba (0, 0, 0, 0.03);
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:haver{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
